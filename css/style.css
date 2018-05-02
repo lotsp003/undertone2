@@ -1,0 +1,63 @@
+html,
+body {
+  height: 99%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+video {
+  width: 100%;
+  height: 90%;
+  background-color: black;
+}
+div.video-controls {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  color: white;
+  background-color: #111;
+  font-family: arial;
+  z-index: 100;
+}
+div.video-controls .playback-duration {
+  vertical-align: middle;
+  display: block;
+  margin: auto;
+  padding-right: 20px;
+}
+div.video-controls .flex {
+  display: flex;
+  flex: 1;
+}
+div.video-controls button.material-icons {
+  background-color: #111;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  height: 100%;
+  min-width: 60px;
+}
+div.video-controls .progress-bar-parent {
+  flex-direction: column;
+  justify-content: center;
+}
+div.video-controls .progress-bar-parent .progress-bar-background {
+  height: 12.5px;
+  background-color: black;
+  border-radius: 12.5px;
+  cursor: pointer;
+}
+div.video-controls .progress-bar-parent .progress-bar-background .progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  border-radius: 12.5px;
+  transition: 750ms;
+}

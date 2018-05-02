@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Video Control Bar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!-- The video -->
+<video src="undertone_promo.mp4" ></video>
+
+<!-- Video controls -->
+<div class="video-controls">
+  
+<!--   Play and pause buttons -->
+  <button class="material-icons play">play_arrow</button>
+  <button class="material-icons pause">pause</button>
+  
+<!--   Playback Duration -->
+  <div class="playback-duration">
+    <span class="progress"></span>
+    <span>/</span>
+    <span class="duration"></span>
+  </div>
+  
+<!--   Progress bar -->
+  <div class="progress-bar-parent flex">
+    <div class="progress-bar-background">
+      <div class="progress-bar"></div>
+    </div>
+  </div>
+  
+<!--   Volume buttons -->
+  <button class="material-icons mute">volume_off</button>
+  <button class="material-icons unmute">volume_up</button>
+<!--   <button class="material-icons fullscreen">fullscreen</button> -->
+<!--   End video controls -->
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
